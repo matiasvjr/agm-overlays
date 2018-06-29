@@ -9,9 +9,9 @@ import {
 import {
   AgmInfoWindow, LatLngBounds, LatLng, MarkerManager,
   GoogleMapsAPIWrapper, AgmMarker
-} from "@agm/core"
+} from "agm-2mundos-core"
 
-import { GoogleMap } from "@agm/core/services/google-maps-types"
+import { GoogleMap } from "agm-2mundos-core/services/google-maps-types"
 declare var google: any
 
 @Component({

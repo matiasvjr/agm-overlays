@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var core_2 = require("@agm/core");
+var agm_2mundos_core_1 = require("agm-2mundos-core/core.umd");
 var AgmOverlay = (function () {
     function AgmOverlay(_mapsWrapper, _markerManager) {
         this._mapsWrapper = _mapsWrapper;
@@ -142,8 +142,8 @@ var AgmOverlay = (function () {
                 },] },
     ];
     AgmOverlay.ctorParameters = function () { return [
-        { type: core_2.GoogleMapsAPIWrapper, },
-        { type: core_2.MarkerManager, },
+        { type: agm_2mundos_core_1.GoogleMapsAPIWrapper, },
+        { type: agm_2mundos_core_1.MarkerManager, },
     ]; };
     AgmOverlay.propDecorators = {
         "latitude": [{ type: core_1.Input },],
@@ -152,7 +152,7 @@ var AgmOverlay = (function () {
         "zIndex": [{ type: core_1.Input },],
         "markerClick": [{ type: core_1.Output },],
         "openInfoWindow": [{ type: core_1.Input },],
-        "infoWindow": [{ type: core_1.ContentChildren, args: [core_2.AgmInfoWindow,] },],
+        "infoWindow": [{ type: core_1.ContentChildren, args: [agm_2mundos_core_1.AgmInfoWindow,] },],
         "draggable": [{ type: core_1.Input, args: ['markerDraggable',] },],
         "template": [{ type: core_1.ViewChild, args: ['content', { read: core_1.ElementRef },] },],
     };

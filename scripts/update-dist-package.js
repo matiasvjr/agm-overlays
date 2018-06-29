@@ -5,6 +5,7 @@ const packPath = require.resolve('../dist/package.json')
 const pack = require(packPath)
 
 pack.version = rootPack.version
+pack.name = rootPack.name
 pack.jsDependencies = rootPack.jsDependencies
 
 fs.writeFileSync(packPath, JSON.stringify(pack, null, 2))
